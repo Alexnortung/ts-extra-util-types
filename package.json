@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@ava/typescript": "^3.0.1",
+    "lerna": "^6.0.3",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "ava": "^5.0.1",
+    "typescript": "^4.8.4"
+  },
+  "author": "Alexander Nortung",
+  "license": "GPL3"
+}
