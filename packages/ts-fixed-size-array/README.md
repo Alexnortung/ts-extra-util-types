@@ -1,0 +1,1 @@
+# ts-fixed-size-array
