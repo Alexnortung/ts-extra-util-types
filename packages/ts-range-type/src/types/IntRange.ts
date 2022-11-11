@@ -1,6 +1,6 @@
-// import { Enumerate } from "./Enumerate";
-//
-// export type IntRange<From extends number, To extends number> = Exclude<
-//   Enumerate<To>,
-//   Enumerate<From>
-// >;
+import { Enumerate } from 'ts-enumerate-type';
+
+export type IntRangeExclusive<From extends number, To extends number> = Exclude<
+  Enumerate<To>,
+  Enumerate<From>
+>;

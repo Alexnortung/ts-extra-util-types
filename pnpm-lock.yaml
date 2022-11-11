@@ -23,14 +23,20 @@ importers:
   packages/ts-enumerate-type:
     specifiers:
       ts-fixed-size-array: '*'
-    dependencies:
+    devDependencies:
       ts-fixed-size-array: link:../ts-fixed-size-array
 
   packages/ts-fixed-size-array:
     specifiers: {}
 
   packages/ts-range-type:
-    specifiers: {}
+    specifiers:
+      ts-enumerate-type: '*'
+      ts-fixed-size-array: '*'
+    dependencies:
+      ts-enumerate-type: link:../ts-enumerate-type
+    devDependencies:
+      ts-fixed-size-array: link:../ts-fixed-size-array
 
 packages:
 

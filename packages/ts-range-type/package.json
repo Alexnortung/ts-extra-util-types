@@ -19,6 +19,12 @@
       "--loader=ts-node/esm"
     ]
   },
+  "dependencies": {
+    "ts-enumerate-type": "*"
+  },
+  "devDependencies": {
+    "ts-fixed-size-array": "*"
+  },
   "author": "Alexander Nortung",
   "license": "GPL3"
 }
