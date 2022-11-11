@@ -1,6 +1,15 @@
-export type Enumerate<
+export type EnumerateExclusive<
   N extends number,
   Acc extends number[] = []
 > = Acc["length"] extends N
   ? Acc[number]
-  : Enumerate<N, [...Acc, Acc["length"]]>;
+  : EnumerateExclusive<N, [...Acc, Acc["length"]]>;
+
+export type EnumerateInclusive<
+  N extends number,
+  Acc extends number[] = []
+> = Acc["length"] extends N
+  ? [...Acc, Acc["length"]][number]
+  : EnumerateInclusive<N, [...Acc, Acc["length"]]>;
+
+export type Enumerate<N extends number> = EnumerateExclusive<N>;

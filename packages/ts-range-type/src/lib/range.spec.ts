@@ -1,14 +1,25 @@
 import test from "ava";
 import { isInRangeExclusive } from "./range";
 import { FixedSizeArray } from "ts-fixed-size-array";
-import { IntRangeExclusive } from "../types/IntRange";
+import { IntRange, IntRangeExclusive } from "../types/IntRange";
 
 test("is in range", (t) => {
   t.true(isInRangeExclusive(1, 0, 5));
   t.false(isInRangeExclusive(-1, 0, 5));
   t.false(isInRangeExclusive(99, 100, 200));
   t.false(isInRangeExclusive(201, 100, 200));
+  t.false(isInRangeExclusive(200, 100, 200));
   t.true(isInRangeExclusive(150, 100, 200));
+});
+
+test("type annotations", t => {
+  const a: IntRange<7, 10> = 10;
+  const b: IntRange<7, 10> = 7;
+  const c: IntRangeExclusive<7, 10> = 7;
+  const d: IntRangeExclusive<7, 10> = 9;
+  // It seems that 1000 is too large
+  // const thisShouldBreak: IntRange<1, 1000> = 100;
+  t.pass();
 });
 
 test("strongly typed array access", (t) => {
