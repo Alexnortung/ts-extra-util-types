@@ -17,11 +17,20 @@ importers:
       lerna: 6.0.3
       ts-node: 10.9.1_typescript@4.8.4
 
+  packages/ts-char-type:
+    specifiers: {}
+
   packages/ts-enumerate-type:
     specifiers:
-      funny-types-fixed-array-size: ^0.0.2
+      ts-fixed-size-array: '*'
     dependencies:
-      funny-types-fixed-array-size: 0.0.2
+      ts-fixed-size-array: link:../ts-fixed-size-array
+
+  packages/ts-fixed-size-array:
+    specifiers: {}
+
+  packages/ts-range-type:
+    specifiers: {}
 
 packages:
 
@@ -2407,10 +2416,6 @@ packages:
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
     dev: true
-
-  /funny-types-fixed-array-size/0.0.2:
-    resolution: {integrity: sha512-zQG0eOUEdHKWJ3j4jpdPD5ivdlAQC1j7yjrHpe2YZpOo4lrrsFYIkWbZSw55rhJ1RS83HD0nY6bW6qSbubCa8Q==}
-    dev: false
 
   /gauge/4.0.4:
     resolution: {integrity: sha512-f9m+BEN5jkg6a0fZjleidjN51VE1X+mPFQ2DJ0uv1V39oCLCbsGe6yjbBnp7eK7z/+GAon99a3nHuqbuuthyPg==}
