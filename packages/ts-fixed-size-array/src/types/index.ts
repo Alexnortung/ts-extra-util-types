@@ -1,1 +1,1 @@
-export * from './FixedSizeArray';
+export * from './FixedSizeArray'

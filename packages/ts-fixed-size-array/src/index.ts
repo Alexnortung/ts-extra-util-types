@@ -1,2 +1,2 @@
-export * from "./lib/array";
-export * from "./types";
+export * from './lib/array'
+export * from './types'

@@ -1,2 +1,2 @@
-export * from './lib/enumerate';
-export * from './types';
+export * from './lib/enumerate'
+export * from './types'

@@ -1,24 +1,24 @@
 {
-  "name": "ts-char-type",
-  "version": "0.0.0",
-  "description": "",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "ava"
-  },
-  "keywords": [
-    "typescript"
-  ],
-  "ava": {
-    "extensions": {
-      "ts": "module"
+    "name": "ts-char-type",
+    "version": "0.0.0",
+    "description": "",
+    "main": "lib/index.js",
+    "typings": "lib/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "ava"
     },
-    "nodeArguments": [
-      "--loader=ts-node/esm"
-    ]
-  },
-  "author": "Alexander Nortung",
-  "license": "GPL3"
+    "keywords": [
+        "typescript"
+    ],
+    "ava": {
+        "extensions": {
+            "ts": "module"
+        },
+        "nodeArguments": [
+            "--loader=ts-node/esm"
+        ]
+    },
+    "author": "Alexander Nortung",
+    "license": "GPL3"
 }

@@ -1,15 +1,26 @@
 {
-  "name": "root",
-  "private": true,
-  "devDependencies": {
-    "@ava/typescript": "^3.0.1",
-    "lerna": "^6.0.3",
-    "ts-node": "^10.9.1"
-  },
-  "dependencies": {
-    "ava": "^5.0.1",
-    "typescript": "^4.8.4"
-  },
-  "author": "Alexander Nortung",
-  "license": "GPL3"
+    "name": "root",
+    "private": true,
+    "scripts": {
+        "lint": "eslint **/*.ts",
+        "format": "prettier --write .",
+        "checkformat": "prettier --check ."
+    },
+    "devDependencies": {
+        "@ava/typescript": "^3.0.1",
+        "@typescript-eslint/eslint-plugin": "^5.42.1",
+        "@typescript-eslint/parser": "^5.42.1",
+        "eslint": "^8.27.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "lerna": "^6.0.3",
+        "prettier": "^2.7.1",
+        "ts-node": "^10.9.1"
+    },
+    "dependencies": {
+        "ava": "^5.0.1",
+        "typescript": "^4.8.4"
+    },
+    "author": "Alexander Nortung",
+    "license": "GPL3"
 }

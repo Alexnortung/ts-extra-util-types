@@ -1,2 +1,1 @@
-export type Char
-= string & { length: 1 };
+export type Char = string & { length: 1 }

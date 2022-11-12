@@ -1,1 +1,1 @@
-export * from './Enumerate';
+export * from './Enumerate'
