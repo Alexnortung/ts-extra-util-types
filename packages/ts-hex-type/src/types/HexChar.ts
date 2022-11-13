@@ -17,4 +17,6 @@ export const hexCharArray = [
     'f',
 ] as const
 
-export type HexChar = typeof hexCharArray[number]
+export type HexCharLowercase = typeof hexCharArray[number]
+export type HexCharUppercase = Uppercase<HexCharLowercase>
+export type HexChar = HexCharLowercase | HexCharUppercase
