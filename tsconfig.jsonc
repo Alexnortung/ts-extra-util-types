@@ -8,9 +8,8 @@
         "noLib": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "target": "es6",
-        "sourceMap": true,
-        "lib": ["es6"]
+        "target": "es2020",
+        "sourceMap": true
     },
     "exclude": ["**/*.spec.ts", "node_modules"]
 }
