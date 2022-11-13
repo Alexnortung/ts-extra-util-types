@@ -1,0 +1,30 @@
+{
+    "name": "ts-hex-type",
+    "version": "0.0.0",
+    "description": "",
+    "main": "lib/index.js",
+    "typings": "lib/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "ava"
+    },
+    "keywords": [
+        "hex",
+        "type",
+        "typescript"
+    ],
+    "ava": {
+        "extensions": {
+            "ts": "module"
+        },
+        "nodeArguments": [
+            "--loader=ts-node/esm"
+        ]
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "author": "Alexander Nortung",
+    "license": "GPL3"
+}
