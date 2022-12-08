@@ -15,5 +15,7 @@ test('type annotations', (t) => {
 
     const b: RepeatString<'a' | 'b', 3> = 'abb'
 
-    t.pass();
+    const c: RepeatString<'ab', 2 | 3> = 'ababab'
+    const d: RepeatString<'ab', 2 | 3> = 'abab'
+    t.pass()
 })
